@@ -23,7 +23,7 @@ const rule3 = new PricingRule("atv", (quantity: number, price: number) => {
   if (quantity > 4) return quantity * promoPrice;
   else return quantity * price;
 });
-describe("", () => {
+describe("Checkout", () => {
   test("Total expected: $249.00", () => {
     const co = new Checkout([rule1, rule2]);
     co.scan(vga);
